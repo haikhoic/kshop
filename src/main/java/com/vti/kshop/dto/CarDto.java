@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 public class CarDto {
-    @JsonProperty("liscensePlate")
+    @JsonProperty("licensePlate")
     private String pkLicensePlate;
     @JsonProperty("repairDate")
     private LocalDate pkRepairDate;

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @AllArgsConstructor
 @CrossOrigin("*")
-public class AccesoryController {
+public class AccessoryController {
     private final AccessoryService accessoryService;
 
     @PostMapping("/api/v1/accessories")
@@ -37,7 +37,7 @@ public class AccesoryController {
 
     @DeleteMapping("/api/v1/accessories/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteById(@PathVariable("id") Long id){
+    public void deleteById(@PathVariable("id") Long id) {
         accessoryService.deleteById(id);
     }
 
